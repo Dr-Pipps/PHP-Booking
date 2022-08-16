@@ -23,20 +23,16 @@
     </div>
      
     <div class="formbox">
-        <div class="header">Booking Info</div>
-        <form action="">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="date">
-            <button>submit</button>
+        
+        <form class="formInfo" action="">
+            <div class="header">Booking Info</div>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Suname">
+            <input type="select" placeholder="Hotel">
+            <input type="text" placeholder="Number of days">
+            <input class="submit"type="submit" value="submit">
         </form>
     </div>
-
-
-
-
 
     <footer class="footer">
         <div class="home">
@@ -94,17 +90,33 @@
         }
 
         .formbox{
+            margin: 10px auto;
+            border: 1px solid black;
+            
+        }
+        .formbox{
+            padding: 50px;
+        }
+        .formbox input{
             display: block;
+            margin: 10px;
+            width: 380px;
+            padding: 6px;
         }
 
-        {
-        background: #FFFFFF;
-        display: flex;
-        align-items: center;
-        place-content: space-between;
-        padding:10px 30px;
-        position: sticky;
-        bottom: 0;}
+        .submit{
+            width: 50px;
+        }
+
+        .footer{
+            background: #FFFFFF;
+            display: flex;
+            align-items: center;
+            place-content: space-between;
+            padding:10px 30px;
+            position: sticky;
+            bottom: 0;
+        }
 
         .home{
             display: flex;
