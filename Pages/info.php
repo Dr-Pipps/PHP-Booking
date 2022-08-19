@@ -1,3 +1,11 @@
+<?php
+
+    require_once('./Classes/oopHotels.php');
+    session_start();
+    
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,6 +37,11 @@
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Suname">
             <input type="select" placeholder="Hotel">
+            <select name="" id="">
+                <option value="">rtyuio</option>
+                <option value="">rtyuio</option>
+                <option value="">rtyuio</option>
+            </select>
             <input type="text" placeholder="Number of days">
             <input class="submit"type="submit" value="submit">
         </form>

@@ -177,11 +177,7 @@
     }
 
     @media(min-width:890px){
-        .bookingIndex{
-            
-            
-            
-        }
+        
         .footer{
             display: none;
         }
