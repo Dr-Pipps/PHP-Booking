@@ -31,19 +31,13 @@
     </div>
      
     <div class="formbox">
-        
-        <form class="formInfo" action="">
-            <div class="header">Booking Info</div>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Suname">
-            <input type="select" placeholder="Hotel">
-            <select name="" id="">
-                <option value="">rtyuio</option>
-                <option value="">rtyuio</option>
-                <option value="">rtyuio</option>
-            </select>
-            <input type="text" placeholder="Number of days">
-            <input class="submit"type="submit" value="submit">
+        <div class="header">Booking Info</div>
+        <form class="formInfo" action="./disHotels.php" method="POST">
+            <input type="text" placeholder="Name" name="customerName">
+            <input type="text" placeholder="Suname" name="customerSurname">
+            <input type="email" placeholder="emailadress" name="customerEmail`">
+            <input type="text" placeholder="Number of days" name="DayNumber">
+            <input class="submit"type="submit" value="submit" name="">
         </form>
     </div>
 
