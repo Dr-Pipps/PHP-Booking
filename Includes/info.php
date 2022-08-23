@@ -33,11 +33,10 @@
     <div class="formbox">
         <div class="header">Booking Info</div>
         <form class="formInfo" action="./disHotels.php" method="POST">
-            <input type="text" placeholder="Name" name="customerName">
-            <input type="text" placeholder="Suname" name="customerSurname">
-            <input type="email" placeholder="emailadress" name="customerEmail`">
-            <input type="text" placeholder="Number of days" name="DayNumber">
-            <input class="submit"type="submit" value="submit" name="">
+            <input type="text" placeholder="Name" name="userName">
+            <input type="email" placeholder="emailadress" name="userEmail`">
+            <input type="text" placeholder="Number of days" name="userDays">
+            <button type="submit" name="submit"></button>
         </form>
     </div>
 

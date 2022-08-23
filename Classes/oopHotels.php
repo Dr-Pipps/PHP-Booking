@@ -1,41 +1,34 @@
 `<?php
 class hotelSelectoin{
-    public $id;
-    public $name;
-    public $costperNight;
-    private $stayLength;
-    private $availRooms;
-    private $fullyBooked;
-    public $description;
-    public $img;
 
-    // Getters & Setters:
+    // proporties :
+    public $Hotelname;
+    public $costPernight;
+    public $image;
+
+    // constructor Method :
+    public function __consrtuct($Hotelname,$costPernight,$image)
+    {
+        $this->Hotelname=$Hotelname;
+        $this->costPernight=$costPernight;
+        $this->$image=$image;
+    }
+
+    //Getters :
+    public function gethotelName(){
+        return $this->Hotelname;
+    }
+    public function getcostperNight(){
+        return $this->costPernight;
+    }
+    public function getimage(){
+        return $this->image;
+    }
     
-    public  function stayLength($stayLength){
-        $this->stayLength = $stayLength;
+    // Methods :
+    public function getTotalCost($x)
+    {
+       $amount =$x * $this->costPernight;
+       return $amount;
     }
-    public function setavailRooms($availRooms){
-        $this->availRooms = $availRooms;
-    }
-    public  function fullyBooked($fullyBooked){
-        $this->fullyBooked=$fullyBooked;
-        if($fullyBooked===true){
-            "Fully booked";
-        }else{
-            "Available";
-        }
-    }
-
-    // constructor method to set all of the values:
-    public function __conrtuct($id,$name,$costperNight,$stayLength,$availRooms,$fullyBooked,$description,$img){
-        $this->$id=$id;
-        $this->$name=$name;
-        $this->$costperNight=$costperNight;
-        $this->$stayLength=$stayLength;
-        $this->$availRooms=$availRooms;
-        $this->$fullyBooked=$fullyBooked;
-        $this->$description=$description;
-        $this->$img=$img;
-    }
-
 }
