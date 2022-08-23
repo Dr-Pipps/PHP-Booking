@@ -59,7 +59,7 @@
                         <li>Total:".$listHotel->getTotalCost()."</li>
                         
                     </div>
-                ";`
+                ";
             };
 
         ?>
